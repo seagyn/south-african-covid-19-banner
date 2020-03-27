@@ -1,5 +1,7 @@
 # RSA Covid-19 Banner
 
+![RSA Covid-19 Banner](https://cdn-std.droplr.net/files/acc_763897/zPvKWi)
+
 This plugin makes it easy for South African WordPress sites to add the Covid-19 banner as required by the South African government. This is to make sure that a legitimate source of information is known.
 
 There is a widget that can be used in sidebars and a shortcode that can be used pretty much anywhere else.
