@@ -11,7 +11,7 @@
  * Plugin Name:       South African Covid-19 Banner
  * Plugin URI:        https://github.com/seagyn/south-africa-covid-19-banner/
  * Description:       This plugin makes it easy for South African WordPress sites to add the Covid-19 banner as required by the South African government.
- * Version            0.1.0
+ * Version:           0.1.0
  * Requires at least: 5.0
  * Requires PHP:      7.1
  * License:           GPL v2 or later
