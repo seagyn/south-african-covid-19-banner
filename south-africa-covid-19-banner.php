@@ -44,7 +44,7 @@ require_once 'src/boot.php';
  */
 function init() {
 
-	define( 'SOUTH_AFRICA_COVID_19_BANNER_VERSION', '0.1.4' );
+	define( 'SOUTH_AFRICA_COVID_19_BANNER_VERSION', '0.1.0' );
 	define( 'SOUTH_AFRICA_COVID_19_BANNER_DIR', plugin_dir_path( __FILE__ ) );
 	define( 'SOUTH_AFRICA_COVID_19_BANNER_URL', plugin_dir_url( __FILE__ ) );
 
