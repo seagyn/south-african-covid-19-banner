@@ -18,7 +18,7 @@ class Banner extends \WP_Widget {
 	 */
 	public function __construct() {
 		parent::__construct(
-			'south-africa-covid-19-banner-widget',
+			'south-african-covid-19-banner-widget',
 			'South African Covid-19 Banner'
 		);
 	}
@@ -32,7 +32,7 @@ class Banner extends \WP_Widget {
 	 * @return void
 	 */
 	public function widget( $args, $instance ) {
-		\wp_enqueue_style( 'south-africa-covid-19-banner', SOUTH_AFRICA_COVID_19_BANNER_URL . 'resources/css/south-africa-covid-19-banner.css', null, SOUTH_AFRICA_COVID_19_BANNER_VERSION, false );
+		\wp_enqueue_style( 'south-african-covid-19-banner', SOUTH_AFRICA_COVID_19_BANNER_URL . 'resources/css/south-african-covid-19-banner.css', null, SOUTH_AFRICA_COVID_19_BANNER_VERSION, false );
 
 		echo $args['before_widget'];
 

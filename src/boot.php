@@ -14,7 +14,7 @@ require_once 'widget.php';
  * Initialises the app.
  */
 function boot() {
-	add_shortcode( 'south-africa-covid-19-banner', 'SeagynDavis\SouthAfricaCovid19Banner\Shortcode\shortcode' );
+	add_shortcode( 'south-african-covid-19-banner', 'SeagynDavis\SouthAfricaCovid19Banner\Shortcode\shortcode' );
 	add_action(
 		'widgets_init',
 		function() {
