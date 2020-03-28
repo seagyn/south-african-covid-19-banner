@@ -19,14 +19,26 @@ add_filter( 'body_class', function( $classes ) {
 
 function rbd_header_banner(){
 
+  $top_banner_array = array( 'covid_top_scroll', 'covid_top_fixed' );
   $options = get_option( 'rbd_options' );
 
-  if ( empty( $options[ 'rbd_position' ] ) ){
+  if ( !in_array( $options[ 'rbd_position' ], $top_banner_array ) ){
     return;
   }
 
   rbd_banner( $options[ 'rbd_position' ] );
+}
 
+function rbd_footer_banner(){
+
+  $bottom_banner_array = array( 'covid_bottom_scroll', 'covid_bottom_fixed' );
+  $options = get_option( 'rbd_options' );
+
+  if ( !in_array( $options[ 'rbd_position' ], $bottom_banner_array ) ){
+    return;
+  }
+
+  rbd_banner( $options[ 'rbd_position' ] );
 }
 
 function rbd_banner( $bannerClass ){
