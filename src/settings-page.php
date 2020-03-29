@@ -12,7 +12,7 @@ include_once 'admin/sa-covid-page.php';
 /**
  * Create top level menu item
  */
-function rbd_options_page() {
+function options_page() {
 
   // add top level menu page
   add_menu_page(
@@ -20,7 +20,7 @@ function rbd_options_page() {
     'SA COVID-19',
     'manage_options',
     'sa-covid-19',
-    'rbd_options_page_content',
+    'options_page_content',
     plugin_dir_url( __FILE__ ) . ( '../resources/images/flag.png' ),
     2
   );
@@ -30,7 +30,7 @@ function rbd_options_page() {
 /**
  * Create settings
  */
-function rbd_settings_init() {
+function settings_init() {
 
   // register a new setting for "rbd" page
   register_setting( 'rbd', 'rbd_options' );
@@ -39,7 +39,7 @@ function rbd_settings_init() {
   add_settings_section(
     'rbd_section',
     __( '', 'rbd' ),
-    'rbd_section_cb',
+    'section_cb',
     'rbd'
   );
 
@@ -47,7 +47,7 @@ function rbd_settings_init() {
   add_settings_field(
     'rbd_position',
     __( 'Banner style', 'rbd' ),
-    'rbd_add_form',
+    'add_form',
     'rbd',
     'rbd_section',
     [

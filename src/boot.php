@@ -26,12 +26,12 @@ function boot() {
 		}
 	);
 
-	add_action( 'admin_init', 'SeagynDavis\SouthAfricaCovid19Banner\SettingsPage\rbd_settings_init' );
+	add_action( 'admin_init', 'SeagynDavis\SouthAfricaCovid19Banner\SettingsPage\settings_init' );
 
- 	add_action( 'admin_menu', 'SeagynDavis\SouthAfricaCovid19Banner\SettingsPage\rbd_options_page' );
+ 	add_action( 'admin_menu', 'SeagynDavis\SouthAfricaCovid19Banner\SettingsPage\options_page' );
 
-	add_action( 'wp_head', 'SeagynDavis\SouthAfricaCovid19Banner\BannerDisplay\rbd_header_banner' );
+	add_action( 'wp_head', 'SeagynDavis\SouthAfricaCovid19Banner\BannerDisplay\header_banner' );
 
-	add_action( 'wp_footer', 'SeagynDavis\SouthAfricaCovid19Banner\BannerDisplay\rbd_footer_banner' );
+	add_action( 'wp_footer', 'SeagynDavis\SouthAfricaCovid19Banner\BannerDisplay\footer_banner' );
 
 }

@@ -6,7 +6,7 @@
 /**
  * top level menu item callback functions
  */
-function rbd_options_page_content() {
+function options_page_content() {
   // check user capabilities
   if ( ! current_user_can( 'manage_options' ) ) {
 
@@ -53,12 +53,12 @@ function rbd_options_page_content() {
  * custom option and settings:
  * callback functions
  */
-function rbd_section_cb( $args ) {
+function section_cb( $args ) {
 
 }
 
 // call back with the form
-function rbd_add_form( $args ) {
+function add_form( $args ) {
 
   // get the value of the setting we've registered with register_setting()
   $options = get_option( 'rbd_options' );
