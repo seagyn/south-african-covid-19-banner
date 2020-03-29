@@ -38,7 +38,7 @@
 namespace SeagynDavis\SouthAfricaCovid19Banner;
 
 require_once 'src/boot.php';
-require_once 'src/admin.php';
+
 /**
  * Initialise the plugin.
  */
@@ -48,11 +48,6 @@ function init() {
 	define( 'SOUTH_AFRICA_COVID_19_BANNER_DIR', plugin_dir_path( __FILE__ ) );
 	define( 'SOUTH_AFRICA_COVID_19_BANNER_URL', plugin_dir_url( __FILE__ ) );
 
-
 	boot();
 }
 add_action( 'plugins_loaded', 'SeagynDavis\SouthAfricaCovid19Banner\init' );
-
-register_activation_hook( __FILE__, 'SeagynDavis\SouthAfricaCovid19Banner\Admin\plugin_activation' );
-
-add_action( 'admin_notices', 'SeagynDavis\SouthAfricaCovid19Banner\Admin\admin_activation_notice' );

@@ -10,10 +10,7 @@ namespace SeagynDavis\SouthAfricaCovid19Banner;
 require_once 'shortcode.php';
 require_once 'widget.php';
 require_once 'settings-page.php';
-require_once 'admin.php';
 require_once 'html/banner-display.php';
-
-
 
 /**
  * Initialises the app.
