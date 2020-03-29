@@ -19,7 +19,7 @@ add_filter( 'body_class', function( $classes ) {
 
 function header_banner(){
 
-  $top_banner_array = array( 'covid_top_scroll', 'covid_top_fixed' );
+  $top_banner_array = array( 'banner_topScroll', 'banner_topFixed' );
   $options = get_option( 'rbd_options' );
 
   if ( !in_array( $options[ 'rbd_position' ], $top_banner_array ) ){
@@ -31,7 +31,7 @@ function header_banner(){
 
 function footer_banner(){
 
-  $bottom_banner_array = array( 'covid_bottom_scroll', 'covid_bottom_fixed' );
+  $bottom_banner_array = array( 'banner_bottomScroll', 'banner_bottomFixed' );
   $options = get_option( 'rbd_options' );
 
   if ( !in_array( $options[ 'rbd_position' ], $bottom_banner_array ) ){

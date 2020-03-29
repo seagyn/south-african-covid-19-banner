@@ -69,16 +69,16 @@ function add_form( $args ) {
   data-custom="<?php echo esc_attr( $args['rbd_custom_data'] ); ?>"
   name="rbd_options[<?php echo esc_attr( $args['label_for'] ); ?>]"
   >
-    <option value="covid_top_scroll" <?php echo ( "covid_top_scroll" === $options['rbd_position'] ? 'selected' : '' );?> >
+    <option value="banner_topScroll" <?php echo ( "banner_topScroll" === $options['rbd_position'] ? 'selected' : '' );?> >
     <?php esc_html_e( 'Top & scroll', 'rbd' ); ?>
     </option>
-    <option value="covid_top_fixed" <?php echo ( "covid_top_fixed" === $options['rbd_position'] ? 'selected' : '' );?> >
+    <option value="banner_topFixed" <?php echo ( "banner_topFixed" === $options['rbd_position'] ? 'selected' : '' );?> >
     <?php esc_html_e( 'Top & fixed', 'rbd' ); ?>
     </option>
-    <option value="covid_bottom_scroll" <?php echo ( "covid_bottom_scroll" === $options['rbd_position'] ? 'selected' : '' );?> >
+    <option value="banner_bottomScroll" <?php echo ( "banner_bottomScroll" === $options['rbd_position'] ? 'selected' : '' );?> >
     <?php esc_html_e( 'Bottom & scroll', 'rbd' ); ?>
     </option>
-    <option value="covid_bottom_fixed" <?php echo ( "covid_bottom_fixed" === $options['rbd_position'] ? 'selected' : '' );?> >
+    <option value="banner_bottomFixed" <?php echo ( "banner_bottomFixed" === $options['rbd_position'] ? 'selected' : '' );?> >
     <?php esc_html_e( 'Bottom & fixed', 'rbd' ); ?>
     </option>
   </select>

@@ -1,10 +1,12 @@
-body.covid_top_scroll,
-body.covid_top_fixed{
+
+.banner_topFixed {
 	padding-top: 54px;
 }
-body.covid_bottom_fixed{
+
+.banner_bottomFixed{
 	padding-bottom: 86px;
 }
+
 .coronaBanner {
 	display: block;
 	background-color: white;
@@ -15,15 +17,16 @@ body.covid_bottom_fixed{
 	line-height: 1.6em;
 }
 
-body.covid_top_scroll .coronaBanner{
-	position: absolute;
+.banner_topScroll .coronaBanner {
+	position: relative;
 	width: 100%;
 	top: 0px;
 	left: 0px;
 	z-index: 99998;
 	border-bottom: 1px solid;
 }
-body.covid_top_fixed .coronaBanner{
+
+.banner_topFixed .coronaBanner {
 	position: fixed;
 	width: 100%;
 	top: 0px;
@@ -34,7 +37,7 @@ body.covid_top_fixed .coronaBanner{
 	box-shadow: 0px 5px 7px 5px rgba(102,102,102,0.3);
 }
 
-body.covid_bottom_fixed .coronaBanner{
+.banner_bottomFixed .coronaBanner {
 	position: fixed;
 	width: 100%;
 	bottom: 0px;
@@ -45,7 +48,7 @@ body.covid_bottom_fixed .coronaBanner{
 	box-shadow: 0px 5px 7px 5px rgba(102,102,102,0.3);
 }
 
-body.covid_bottom_scroll .coronaBanner{
+.banner_bottomScroll .coronaBanner {
 	position: relative;
 	width: 100%;
 	bottom: 0px;
@@ -55,6 +58,7 @@ body.covid_bottom_scroll .coronaBanner{
 	-moz-box-shadow: 0px 5px 7px 5px rgba(102,102,102,0.3);
 	box-shadow: 0px 5px 7px 5px rgba(102,102,102,0.3);
 }
+
 .coronaBanner__content {
 	width: 100%;
 	display: flex;
@@ -91,15 +95,15 @@ body.covid_bottom_scroll .coronaBanner{
 
 @media screen and ( max-width: 768px ){
 
-	body.corona-banner-top {
+	.banner_topFixed {
     padding-top: 100px;
 	}
 
-	body.corona-banner-bottom {
-    padding-bottom: 145px;
+	.banner_bottomFixed {
+		padding-bottom: 140px;
 	}
 
-	.coronaBanner__content{
+	.coronaBanner__content {
 		flex-wrap: wrap;
 		text-align: center;
 	}
