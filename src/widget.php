@@ -32,7 +32,7 @@ class Banner extends \WP_Widget {
 	 * @return void
 	 */
 	public function widget( $args, $instance ) {
-		\wp_enqueue_style( 'south-african-covid-19-banner', SOUTH_AFRICA_COVID_19_BANNER_URL . 'resources/css/south-african-covid-19-banner.min.css', null, SOUTH_AFRICA_COVID_19_BANNER_VERSION, false );
+		\wp_enqueue_style( 'south-african-covid-19-banner', SOUTH_AFRICA_COVID_19_BANNER_URL . 'resources/css/south-african-covid-19-banner.css', null, SOUTH_AFRICA_COVID_19_BANNER_VERSION, false );
 
 		echo $args['before_widget'];
 

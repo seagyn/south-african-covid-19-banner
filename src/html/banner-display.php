@@ -43,7 +43,7 @@ function rbd_footer_banner(){
 
 function rbd_banner( $bannerClass ){
 
-  \wp_enqueue_style( 'south-african-covid-19-page-banner', SOUTH_AFRICA_COVID_19_BANNER_URL . 'resources/css/south-african-covid-19-page-banner.min.css', null, SOUTH_AFRICA_COVID_19_BANNER_VERSION, false );
+  \wp_enqueue_style( 'south-african-covid-19-page-banner', SOUTH_AFRICA_COVID_19_BANNER_URL . 'resources/css/south-african-covid-19-page-banner.css', null, SOUTH_AFRICA_COVID_19_BANNER_VERSION, false );
 
   echo '<div id="coronaBanner" class="coronaBanner '. $bannerClass .'">'.
     '<div class="coronaBanner__content">'.
