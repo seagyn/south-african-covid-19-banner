@@ -69,6 +69,9 @@ function add_form( $args ) {
   data-custom="<?php echo esc_attr( $args['rbd_custom_data'] ); ?>"
   name="rbd_options[<?php echo esc_attr( $args['label_for'] ); ?>]"
   >
+    <option value="" <?php echo ( "banner_topScroll" === $options['rbd_position'] ? 'selected' : '' );?> >
+    <?php esc_html_e( 'None', 'rbd' ); ?>
+    </option>
     <option value="banner_topScroll" <?php echo ( "banner_topScroll" === $options['rbd_position'] ? 'selected' : '' );?> >
     <?php esc_html_e( 'Top & scroll', 'rbd' ); ?>
     </option>

@@ -1,13 +1,13 @@
-
-.banner_topFixed {
-	padding-top: 54px;
+.banner_topFixed,
+.banner_topScroll {
+	padding-top: 95px;
 }
 
 .banner_bottomFixed{
 	padding-bottom: 86px;
 }
 
-.coronaBanner {
+.corona-banner {
 	display: block;
 	background-color: white;
 	text-align: center;
@@ -17,8 +17,8 @@
 	line-height: 1.6em;
 }
 
-.banner_topScroll .coronaBanner {
-	position: relative;
+.banner_topScroll .corona-banner {
+	position: absolute;
 	width: 100%;
 	top: 0px;
 	left: 0px;
@@ -26,7 +26,7 @@
 	border-bottom: 1px solid;
 }
 
-.banner_topFixed .coronaBanner {
+.banner_topFixed .corona-banner {
 	position: fixed;
 	width: 100%;
 	top: 0px;
@@ -37,7 +37,7 @@
 	box-shadow: 0px 5px 7px 5px rgba(102,102,102,0.3);
 }
 
-.banner_bottomFixed .coronaBanner {
+.banner_bottomFixed .corona-banner {
 	position: fixed;
 	width: 100%;
 	bottom: 0px;
@@ -48,7 +48,7 @@
 	box-shadow: 0px 5px 7px 5px rgba(102,102,102,0.3);
 }
 
-.banner_bottomScroll .coronaBanner {
+.banner_bottomScroll .corona-banner {
 	position: relative;
 	width: 100%;
 	bottom: 0px;
@@ -59,36 +59,39 @@
 	box-shadow: 0px 5px 7px 5px rgba(102,102,102,0.3);
 }
 
-.coronaBanner__content {
-	width: 100%;
+.corona-banner-content {
 	display: flex;
-	justify-content: center;
-	align-items: center;
+  text-align: left;
+  justify-content: center;
+  align-items: center;
 }
 
-.coronaBanner__websiteLink {
+a.corona-banner-website-link {
+	display: block;
+}
+
+img.corona-banner-website-link-img {
 	display: inline-block;
-}
-
-.coronaBanner__websiteLinkImg {
 	border: 0;
-	display: inline-block;
+	margin-right: 20px;
 }
 
-.coronaBanner__hotlineLink,
-.coronaBanner__whatsappLink {
+a.corona-banner-hotline-link,
+a.corona-banner-whatsapp-link,
+a.corona-banner-hotline-link:visited,
+a.corona-banner-whatsapp-link:visited {
 	display: block;
 	text-decoration: none;
 	color: #e95211;
-	padding: 0 20px;
 }
 
-.coronaBanner__hotlineLink:hover,
-.coronaBanner__whatsappLink:hover {
+a.corona-banner-hotline-link:hover,
+a.corona-banner-whatsapp-link:hover {
 	text-decoration: underline;
+	color: #e95211;
 }
 
-.coronaBanner__hotlineLink {
+a.corona-banner-hotline-link {
 	font-weight: bold;
 }
 
@@ -103,13 +106,18 @@
 		padding-bottom: 140px;
 	}
 
-	.coronaBanner__content {
+	.corona-banner-content {
 		flex-wrap: wrap;
 		text-align: center;
 	}
 
-	.coronaBanner__websiteLink {
+	.corona-banner-website-link {
 		width: 100%;
+		text-align: center;
+	}
+
+	.corona-banner-website-link-img{
+		margin: 0;
 	}
 
 	.coronaBanner__hotlineLink,
