@@ -41,5 +41,3 @@ class Banner extends \WP_Widget {
 		echo $args['after_widget'];
 	}
 }
-
-
