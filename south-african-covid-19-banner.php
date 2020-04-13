@@ -13,7 +13,7 @@
  * Description:       This plugin makes it easy for South African WordPress sites to add the Covid-19 banner as required by the South African government.
  * Version:           0.2.0
  * Requires at least: 5.0
- * Requires PHP:      7.0
+ * Requires PHP:      5.6
  * License:           GPL v2 or later
  * License URI:       https://www.gnu.org/licenses/gpl-2.0.html
  * Author:            Seagyn Davis
