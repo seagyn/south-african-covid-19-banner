@@ -19,9 +19,5 @@ function shortcode() {
 
 	include_once 'html/banner.php';
 
-	$banner = ob_get_contents();
-
-	ob_end_clean();
-
-	return $banner;
+	return ob_get_clean();
 }
